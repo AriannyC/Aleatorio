@@ -20,9 +20,9 @@ namespace Aleatorio
             while (true)
             {
                 Console.Write("¿Cuántos usuarios aleatorios deseas obtener? ");
-                if (int.TryParse(Console.ReadLine(), out int userCount) && userCount > 0)
+                if (int.TryParse(Console.ReadLine(), out int num) && num > 0)
                 {
-                    await _userService.UsersAsync(userCount);
+                    await _userService.UsersAsync(num);
                 }
                 else
                 {
