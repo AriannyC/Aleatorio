@@ -11,7 +11,7 @@ namespace Aleatorio
 {
     public class ProgreCon: IService
     {
-        public async Task UsersAsync(int userCount)
+        public async Task UsersAsync(int num)
         {
             using (HttpClient client = new HttpClient())
             {
@@ -39,7 +39,7 @@ namespace Aleatorio
                 Console.Clear();
 
                 List<Task> tasks = new List<Task>();
-                for (int i = 0; i < userCount; i++)
+                for (int i = 0; i < num; i++)
                 {
                     tasks.Add(ConAsync(client));
                 }

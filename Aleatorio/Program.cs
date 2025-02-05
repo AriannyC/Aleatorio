@@ -11,8 +11,8 @@ namespace Aleatorio
         static async Task Main(string[] args)
         {
             IService userService = new ProgreCon();
-            User userConsole = new User(userService);
-            await userConsole.DAsync();
+            User user = new User(userService);
+            await user.DAsync();
         }
     }
 }

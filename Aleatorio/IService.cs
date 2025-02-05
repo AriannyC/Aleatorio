@@ -9,7 +9,7 @@ namespace Aleatorio
 {
     public interface IService
     {
-        Task UsersAsync(int userCount);
+        Task UsersAsync(int num);
         Task ConAsync(HttpClient client);
     }
 }
