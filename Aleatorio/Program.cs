@@ -12,7 +12,7 @@ namespace Aleatorio
         {
             IService userService = new ProgreCon();
             User userConsole = new User(userService);
-            await userConsole.RunAsync();
+            await userConsole.DAsync();
         }
     }
 }

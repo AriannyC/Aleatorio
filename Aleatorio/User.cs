@@ -15,7 +15,7 @@ namespace Aleatorio
             _userService = userService;
         }
 
-        public async Task RunAsync()
+        public async Task DAsync()
         {
             while (true)
             {
